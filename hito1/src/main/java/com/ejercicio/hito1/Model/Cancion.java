@@ -14,7 +14,9 @@ public class Cancion {
     private Long id;
     @NotBlank(message = "El nombre de la canción es obligatorio")
     private String nombre;
+    @NotBlank(message = "El género no puede estar vacío")
     private String genero;
+    @NotBlank(message = "La letra de la canción es obligatoria")
     private String letra;
 
     public long getId() {
